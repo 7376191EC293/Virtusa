@@ -1,0 +1,16 @@
+<h1 align = 'center'> Drop It down...</h1>
+<div align = 'center' >
+  <select class = "dropdown" [(ngModel)]="pic">
+    <option *ngFor = "let drop of picture" [ngValue] = "drop" >
+      {{drop}}
+    </option>
+  </select>
+</div>
+<div align = 'center' >
+  <img *ngIf = "pic === 'apple'"src = "https://www.collinsdictionary.com/images/full/apple_158989157.jpg">
+  <img *ngIf = "pic === 'mango'"src = "https://www.agroponiente.com/wp-content/uploads/2021/08/mango-Agroponiente.png">
+  <img *ngIf = "pic === 'grapes'"src = "https://img.freepik.com/premium-vector/isolated-dark-grape-with-green-leaf_317810-1956.jpg?w=2000">
+  <img *ngIf = "pic === 'pineapple'"src = "https://www.kandyfreshfruits.com/wp-content/uploads/2013/06/pineapple1.jpg">
+
+
+</div>
